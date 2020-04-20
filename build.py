@@ -24,7 +24,6 @@ dict_key_values['total_positive'] = read_number(root + " > visual-container-mode
 
 filename = 'archive/' + str(date.today()) + '.csv'
 with open(filename, 'w') as f:
-    f.write("key,value\n")
     for key in dict_key_values.keys():
         f.write("%s,%s\n"%(key,dict_key_values[key]))
 
