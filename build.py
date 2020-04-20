@@ -28,5 +28,5 @@ with open(filename, 'w') as f:
     for key in dict_key_values.keys():
         f.write("%s,%s\n"%(key,dict_key_values[key]))
 
-print(os.system('ln -sf ' + filename + ' latest.csv'))
+print(os.system('cp -f ' + filename + ' latest.csv'))
 driver.quit()
