@@ -17,6 +17,7 @@ try:
     dict_key_values['total_negative'] = read_number("visual-container-modern:nth-child(10) title")
     dict_key_values['total_fatalities'] = read_number("visual-container-modern:nth-child(7) title")
     dict_key_values['total_positive'] = read_number("visual-container-modern:nth-child(9) title")
+    dict_key_values['new_cases'] = read_number("visual-container-modern:nth-child(8) title")
 
     WebDriverWait(driver, 10).until(lambda x: driver.find_element_by_css_selector("visual-container-modern:nth-child(11) .cardItemContainer:nth-child(1) > .caption"))
 
